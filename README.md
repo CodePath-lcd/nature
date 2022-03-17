@@ -81,3 +81,7 @@ Optional:
 * Map -> Can see different activites in the area
 * Profile -> Text field to be modified. 
 * Settings -> Toggle settings
+
+## Wireframes
+![wireframe](https://user-images.githubusercontent.com/43360016/158896761-40b7d55f-7a9d-4c88-bfe3-a616bf74e557.jpg)
+
