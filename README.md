@@ -40,6 +40,7 @@ Helps people meet new outdoor peers to explore new areas around. Whether it is f
 * Allow the user to take a photo, tag it with a location, and then see a map with all the previously tagged photos. 
 * User can share hiking activity on other social networks.
  * Settings (Accesibility, Notification, General, etc.)
+ * User can login/register with google/facebook
 
 ### 2. Screen Archetypes
 
