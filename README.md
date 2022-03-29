@@ -98,6 +98,8 @@ object id | String | unique id for the user post (default field)
  info | String | description about the location by the author
  commentCount| number | number of comments on a picture
  likeCount  | number | number of likes on a picture
+  message  | string | users can send messages in a groupchat
+ 
   
 
 ### Networking
