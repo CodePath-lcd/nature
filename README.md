@@ -5,8 +5,9 @@ NATURE
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema] (#Schema)
 
 ## Overview
 ### Description
@@ -84,6 +85,8 @@ Optional:
 
 ## Wireframes
 ![wireframe](https://user-images.githubusercontent.com/43360016/158896761-40b7d55f-7a9d-4c88-bfe3-a616bf74e557.jpg)
+
+## Schema
 
 ### Data Models 
  Property | Type | Description
