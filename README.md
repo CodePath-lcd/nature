@@ -85,6 +85,18 @@ Optional:
 ## Wireframes
 ![wireframe](https://user-images.githubusercontent.com/43360016/158896761-40b7d55f-7a9d-4c88-bfe3-a616bf74e557.jpg)
 
+### Data Models 
+ Property | Type | Description
+----------|----------|-----------
+object id | String | unique id for the user post (default field)
+  author  | Pointer to User | author of the picture
+ picture  | File  | picture that the user post
+ caption  | String | caption on the picture by the author
+ info | String | description about the location by the author
+ commentCount| number | number of comments on a picture
+ likeCount  | number | number of likes on a picture
+  
+
 ### Networking
 #### List of parse network requests by screen
    - Register Screen
