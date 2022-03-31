@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B233D0EED2E1B070C6F7726 /* Pods_Naturely_NaturelyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */; };
+		966917547CE38A535ACE8470 /* Pods_Naturely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */; };
+		BB15B87295B47FB0008F0D7D /* Pods_NaturelyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */; };
+		D00458BB27F54020003E0503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BA27F54020003E0503 /* AppDelegate.swift */; };
+		D00458BD27F54020003E0503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BC27F54020003E0503 /* SceneDelegate.swift */; };
+		D00458BF27F54020003E0503 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BE27F54020003E0503 /* ViewController.swift */; };
+		D00458C227F54020003E0503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00458C027F54020003E0503 /* Main.storyboard */; };
+		D00458C427F54023003E0503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00458C327F54023003E0503 /* Assets.xcassets */; };
+		D00458C727F54023003E0503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00458C527F54023003E0503 /* LaunchScreen.storyboard */; };
+		D00458D227F54023003E0503 /* NaturelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458D127F54023003E0503 /* NaturelyTests.swift */; };
+		D00458DC27F54023003E0503 /* NaturelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458DB27F54023003E0503 /* NaturelyUITests.swift */; };
+		D00458DE27F54023003E0503 /* NaturelyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458DD27F54023003E0503 /* NaturelyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D00458CE27F54023003E0503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00458AF27F54020003E0503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00458B627F54020003E0503;
+			remoteInfo = Naturely;
+		};
+		D00458D827F54023003E0503 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D00458AF27F54020003E0503 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00458B627F54020003E0503;
+			remoteInfo = Naturely;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44B1E421D95F7E3E8454B065 /* Pods-NaturelyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturelyTests.release.xcconfig"; path = "Target Support Files/Pods-NaturelyTests/Pods-NaturelyTests.release.xcconfig"; sourceTree = "<group>"; };
+		514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naturely_NaturelyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0AE595368115863FFD34E6 /* Pods-Naturely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely.debug.xcconfig"; path = "Target Support Files/Pods-Naturely/Pods-Naturely.debug.xcconfig"; sourceTree = "<group>"; };
+		5F45080F0D594EFCE9FDB259 /* Pods-Naturely-NaturelyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.release.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B99D8BF4445610A3967BCCEB /* Pods-NaturelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturelyTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturelyTests/Pods-NaturelyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naturely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00458B727F54020003E0503 /* Naturely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naturely.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00458BA27F54020003E0503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D00458BC27F54020003E0503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D00458BE27F54020003E0503 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D00458C127F54020003E0503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D00458C327F54023003E0503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D00458C627F54023003E0503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D00458C827F54023003E0503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D00458CD27F54023003E0503 /* NaturelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaturelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00458D127F54023003E0503 /* NaturelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturelyTests.swift; sourceTree = "<group>"; };
+		D00458D727F54023003E0503 /* NaturelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaturelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00458DB27F54023003E0503 /* NaturelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturelyUITests.swift; sourceTree = "<group>"; };
+		D00458DD27F54023003E0503 /* NaturelyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturelyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1CC442BB494A6B681140018 /* Pods-Naturely-NaturelyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7D77FE31AC011159CEEBCE5 /* Pods-Naturely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely.release.xcconfig"; path = "Target Support Files/Pods-Naturely/Pods-Naturely.release.xcconfig"; sourceTree = "<group>"; };
+		FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaturelyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00458B427F54020003E0503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966917547CE38A535ACE8470 /* Pods_Naturely.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00458CA27F54023003E0503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB15B87295B47FB0008F0D7D /* Pods_NaturelyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00458D427F54023003E0503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B233D0EED2E1B070C6F7726 /* Pods_Naturely_NaturelyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73E9B00F3282CB76DFD5689E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */,
+				514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */,
+				FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A76EE2A9AE7B7CE0E5C98104 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A0AE595368115863FFD34E6 /* Pods-Naturely.debug.xcconfig */,
+				F7D77FE31AC011159CEEBCE5 /* Pods-Naturely.release.xcconfig */,
+				E1CC442BB494A6B681140018 /* Pods-Naturely-NaturelyUITests.debug.xcconfig */,
+				5F45080F0D594EFCE9FDB259 /* Pods-Naturely-NaturelyUITests.release.xcconfig */,
+				B99D8BF4445610A3967BCCEB /* Pods-NaturelyTests.debug.xcconfig */,
+				44B1E421D95F7E3E8454B065 /* Pods-NaturelyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D00458AE27F54020003E0503 = {
+			isa = PBXGroup;
+			children = (
+				D00458B927F54020003E0503 /* Naturely */,
+				D00458D027F54023003E0503 /* NaturelyTests */,
+				D00458DA27F54023003E0503 /* NaturelyUITests */,
+				D00458B827F54020003E0503 /* Products */,
+				A76EE2A9AE7B7CE0E5C98104 /* Pods */,
+				73E9B00F3282CB76DFD5689E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D00458B827F54020003E0503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D00458B727F54020003E0503 /* Naturely.app */,
+				D00458CD27F54023003E0503 /* NaturelyTests.xctest */,
+				D00458D727F54023003E0503 /* NaturelyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00458B927F54020003E0503 /* Naturely */ = {
+			isa = PBXGroup;
+			children = (
+				D00458BA27F54020003E0503 /* AppDelegate.swift */,
+				D00458BC27F54020003E0503 /* SceneDelegate.swift */,
+				D00458BE27F54020003E0503 /* ViewController.swift */,
+				D00458C027F54020003E0503 /* Main.storyboard */,
+				D00458C327F54023003E0503 /* Assets.xcassets */,
+				D00458C527F54023003E0503 /* LaunchScreen.storyboard */,
+				D00458C827F54023003E0503 /* Info.plist */,
+			);
+			path = Naturely;
+			sourceTree = "<group>";
+		};
+		D00458D027F54023003E0503 /* NaturelyTests */ = {
+			isa = PBXGroup;
+			children = (
+				D00458D127F54023003E0503 /* NaturelyTests.swift */,
+			);
+			path = NaturelyTests;
+			sourceTree = "<group>";
+		};
+		D00458DA27F54023003E0503 /* NaturelyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D00458DB27F54023003E0503 /* NaturelyUITests.swift */,
+				D00458DD27F54023003E0503 /* NaturelyUITestsLaunchTests.swift */,
+			);
+			path = NaturelyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D00458B627F54020003E0503 /* Naturely */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00458E127F54023003E0503 /* Build configuration list for PBXNativeTarget "Naturely" */;
+			buildPhases = (
+				15EC93F5F22E38DDCA5997A3 /* [CP] Check Pods Manifest.lock */,
+				D00458B327F54020003E0503 /* Sources */,
+				D00458B427F54020003E0503 /* Frameworks */,
+				D00458B527F54020003E0503 /* Resources */,
+				64B2F0ABEF8BCEBD480E2D42 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Naturely;
+			productName = Naturely;
+			productReference = D00458B727F54020003E0503 /* Naturely.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D00458CC27F54023003E0503 /* NaturelyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00458E427F54023003E0503 /* Build configuration list for PBXNativeTarget "NaturelyTests" */;
+			buildPhases = (
+				963390E786B03FA3F9FF1BFB /* [CP] Check Pods Manifest.lock */,
+				D00458C927F54023003E0503 /* Sources */,
+				D00458CA27F54023003E0503 /* Frameworks */,
+				D00458CB27F54023003E0503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00458CF27F54023003E0503 /* PBXTargetDependency */,
+			);
+			name = NaturelyTests;
+			productName = NaturelyTests;
+			productReference = D00458CD27F54023003E0503 /* NaturelyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D00458D627F54023003E0503 /* NaturelyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00458E727F54023003E0503 /* Build configuration list for PBXNativeTarget "NaturelyUITests" */;
+			buildPhases = (
+				BEB40CF5A345AFEB927E9A17 /* [CP] Check Pods Manifest.lock */,
+				D00458D327F54023003E0503 /* Sources */,
+				D00458D427F54023003E0503 /* Frameworks */,
+				D00458D527F54023003E0503 /* Resources */,
+				C6540D7415DE2ED97BBB60E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D00458D927F54023003E0503 /* PBXTargetDependency */,
+			);
+			name = NaturelyUITests;
+			productName = NaturelyUITests;
+			productReference = D00458D727F54023003E0503 /* NaturelyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D00458AF27F54020003E0503 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D00458B627F54020003E0503 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D00458CC27F54023003E0503 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D00458B627F54020003E0503;
+					};
+					D00458D627F54023003E0503 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D00458B627F54020003E0503;
+					};
+				};
+			};
+			buildConfigurationList = D00458B227F54020003E0503 /* Build configuration list for PBXProject "Naturely" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D00458AE27F54020003E0503;
+			productRefGroup = D00458B827F54020003E0503 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D00458B627F54020003E0503 /* Naturely */,
+				D00458CC27F54023003E0503 /* NaturelyTests */,
+				D00458D627F54023003E0503 /* NaturelyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00458B527F54020003E0503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00458C727F54023003E0503 /* LaunchScreen.storyboard in Resources */,
+				D00458C427F54023003E0503 /* Assets.xcassets in Resources */,
+				D00458C227F54020003E0503 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00458CB27F54023003E0503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00458D527F54023003E0503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15EC93F5F22E38DDCA5997A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Naturely-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B2F0ABEF8BCEBD480E2D42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Naturely/Pods-Naturely-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Naturely/Pods-Naturely-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Naturely/Pods-Naturely-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		963390E786B03FA3F9FF1BFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NaturelyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB40CF5A345AFEB927E9A17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Naturely-NaturelyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6540D7415DE2ED97BBB60E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00458B327F54020003E0503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00458BF27F54020003E0503 /* ViewController.swift in Sources */,
+				D00458BB27F54020003E0503 /* AppDelegate.swift in Sources */,
+				D00458BD27F54020003E0503 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00458C927F54023003E0503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00458D227F54023003E0503 /* NaturelyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00458D327F54023003E0503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00458DE27F54023003E0503 /* NaturelyUITestsLaunchTests.swift in Sources */,
+				D00458DC27F54023003E0503 /* NaturelyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D00458CF27F54023003E0503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00458B627F54020003E0503 /* Naturely */;
+			targetProxy = D00458CE27F54023003E0503 /* PBXContainerItemProxy */;
+		};
+		D00458D927F54023003E0503 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00458B627F54020003E0503 /* Naturely */;
+			targetProxy = D00458D827F54023003E0503 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D00458C027F54020003E0503 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00458C127F54020003E0503 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D00458C527F54023003E0503 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D00458C627F54023003E0503 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D00458DF27F54023003E0503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D00458E027F54023003E0503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D00458E227F54023003E0503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A0AE595368115863FFD34E6 /* Pods-Naturely.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DB7SD54R3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Naturely/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.defel.Naturely;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D00458E327F54023003E0503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D77FE31AC011159CEEBCE5 /* Pods-Naturely.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DB7SD54R3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Naturely/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.defel.Naturely;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D00458E527F54023003E0503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99D8BF4445610A3967BCCEB /* Pods-NaturelyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DB7SD54R3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.defel.NaturelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Naturely.app/Naturely";
+			};
+			name = Debug;
+		};
+		D00458E627F54023003E0503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44B1E421D95F7E3E8454B065 /* Pods-NaturelyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DB7SD54R3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.defel.NaturelyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Naturely.app/Naturely";
+			};
+			name = Release;
+		};
+		D00458E827F54023003E0503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CC442BB494A6B681140018 /* Pods-Naturely-NaturelyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DB7SD54R3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.defel.NaturelyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Naturely;
+			};
+			name = Debug;
+		};
+		D00458E927F54023003E0503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F45080F0D594EFCE9FDB259 /* Pods-Naturely-NaturelyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DB7SD54R3C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.defel.NaturelyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Naturely;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D00458B227F54020003E0503 /* Build configuration list for PBXProject "Naturely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00458DF27F54023003E0503 /* Debug */,
+				D00458E027F54023003E0503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00458E127F54023003E0503 /* Build configuration list for PBXNativeTarget "Naturely" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00458E227F54023003E0503 /* Debug */,
+				D00458E327F54023003E0503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00458E427F54023003E0503 /* Build configuration list for PBXNativeTarget "NaturelyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00458E527F54023003E0503 /* Debug */,
+				D00458E627F54023003E0503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00458E727F54023003E0503 /* Build configuration list for PBXNativeTarget "NaturelyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00458E827F54023003E0503 /* Debug */,
+				D00458E927F54023003E0503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D00458AF27F54020003E0503 /* Project object */;
+}
