@@ -19,6 +19,11 @@
 		D00458D227F54023003E0503 /* NaturelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458D127F54023003E0503 /* NaturelyTests.swift */; };
 		D00458DC27F54023003E0503 /* NaturelyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458DB27F54023003E0503 /* NaturelyUITests.swift */; };
 		D00458DE27F54023003E0503 /* NaturelyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458DD27F54023003E0503 /* NaturelyUITestsLaunchTests.swift */; };
+		D0F284D727FD18A3005C5603 /* FeedScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284D627FD18A2005C5603 /* FeedScreen.storyboard */; };
+		D0F284D927FD18B8005C5603 /* PostScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284D827FD18B8005C5603 /* PostScreen.storyboard */; };
+		D0F284DB27FD18D7005C5603 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */; };
+		D0F284DD27FD18F1005C5603 /* UserScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */; };
+		D0F284DF27FD1903005C5603 /* ChatScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		D00458D727F54023003E0503 /* NaturelyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaturelyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00458DB27F54023003E0503 /* NaturelyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturelyUITests.swift; sourceTree = "<group>"; };
 		D00458DD27F54023003E0503 /* NaturelyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturelyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0F284D627FD18A2005C5603 /* FeedScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedScreen.storyboard; sourceTree = "<group>"; };
+		D0F284D827FD18B8005C5603 /* PostScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostScreen.storyboard; sourceTree = "<group>"; };
+		D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
+		D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserScreen.storyboard; sourceTree = "<group>"; };
+		D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatScreen.storyboard; sourceTree = "<group>"; };
 		E1CC442BB494A6B681140018 /* Pods-Naturely-NaturelyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D77FE31AC011159CEEBCE5 /* Pods-Naturely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely.release.xcconfig"; path = "Target Support Files/Pods-Naturely/Pods-Naturely.release.xcconfig"; sourceTree = "<group>"; };
 		FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaturelyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +121,6 @@
 				B99D8BF4445610A3967BCCEB /* Pods-NaturelyTests.debug.xcconfig */,
 				44B1E421D95F7E3E8454B065 /* Pods-NaturelyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +153,11 @@
 				D00458BC27F54020003E0503 /* SceneDelegate.swift */,
 				D00458BE27F54020003E0503 /* ViewController.swift */,
 				D00458C027F54020003E0503 /* Main.storyboard */,
+				D0F284D627FD18A2005C5603 /* FeedScreen.storyboard */,
+				D0F284D827FD18B8005C5603 /* PostScreen.storyboard */,
+				D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */,
+				D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */,
+				D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */,
 				D00458C327F54023003E0503 /* Assets.xcassets */,
 				D00458C527F54023003E0503 /* LaunchScreen.storyboard */,
 				D00458C827F54023003E0503 /* Info.plist */,
@@ -277,9 +291,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F284DD27FD18F1005C5603 /* UserScreen.storyboard in Resources */,
+				D0F284D727FD18A3005C5603 /* FeedScreen.storyboard in Resources */,
 				D00458C727F54023003E0503 /* LaunchScreen.storyboard in Resources */,
 				D00458C427F54023003E0503 /* Assets.xcassets in Resources */,
+				D0F284DF27FD1903005C5603 /* ChatScreen.storyboard in Resources */,
+				D0F284DB27FD18D7005C5603 /* MapScreen.storyboard in Resources */,
 				D00458C227F54020003E0503 /* Main.storyboard in Resources */,
+				D0F284D927FD18B8005C5603 /* PostScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
