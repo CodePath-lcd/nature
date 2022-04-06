@@ -1,5 +1,4 @@
-Unit 10
-# Part I
+# Unit 10
 ## User Stories
 
 The following **required** functionality is completed:
