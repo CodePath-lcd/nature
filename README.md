@@ -1,3 +1,18 @@
+Unit 10
+# Part I
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] App launches to login page.
+- [x] User can choose to sign-up/register.
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://i.imgur.com/mlyom62.gif' title='Video Walkthrough' width='250' alt='Video Walkthrough' />
+
 Unit 8: Group Milestone - README 
 ===
 
