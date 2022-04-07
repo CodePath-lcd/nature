@@ -24,6 +24,7 @@
 		D0F284DB27FD18D7005C5603 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */; };
 		D0F284DD27FD18F1005C5603 /* UserScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */; };
 		D0F284DF27FD1903005C5603 /* ChatScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */; };
+		D0F284E127FE731F005C5603 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F284E027FE731F005C5603 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
 		D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserScreen.storyboard; sourceTree = "<group>"; };
 		D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatScreen.storyboard; sourceTree = "<group>"; };
+		D0F284E027FE731F005C5603 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E1CC442BB494A6B681140018 /* Pods-Naturely-NaturelyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D77FE31AC011159CEEBCE5 /* Pods-Naturely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely.release.xcconfig"; path = "Target Support Files/Pods-Naturely/Pods-Naturely.release.xcconfig"; sourceTree = "<group>"; };
 		FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaturelyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F284E127FE731F005C5603 /* MapKit.framework in Frameworks */,
 				966917547CE38A535ACE8470 /* Pods_Naturely.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +107,7 @@
 		73E9B00F3282CB76DFD5689E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0F284E027FE731F005C5603 /* MapKit.framework */,
 				C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */,
 				514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */,
 				FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */,

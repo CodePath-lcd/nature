@@ -7,7 +7,8 @@ target 'Naturely' do
 
   # Pods for Naturely
 
-pod 'Parse'
+	pod 'Parse'
+	pod 'AlamofireImage'
 
   target 'NaturelyTests' do
     inherit! :search_paths
