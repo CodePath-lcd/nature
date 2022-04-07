@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Naturely
 //
-//  Created by Emanuel L on 3/30/22.
+//  Created by Ditry D'ateian on 3/30/22.
 //
 
 import UIKit
