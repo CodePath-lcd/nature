@@ -54,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="1457" y="1541"/>
         </scene>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="xsT-hF-6TQ">
             <objects>
                 <viewController id="r5k-cR-6pb" sceneMemberID="viewController">
@@ -64,13 +64,13 @@
                         <viewLayoutGuide key="safeArea" id="WOt-qj-qJB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="W67-lZ-dy2"/>
+                    <tabBarItem key="tabBarItem" title="" image="mappin.square" catalog="system" id="W67-lZ-dy2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Paz-a4-h50" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-235" y="1541"/>
         </scene>
-        <!--Item 1-->
+        <!--View Controller-->
         <scene sceneID="7TN-P3-sd0">
             <objects>
                 <viewController id="CvJ-Ls-pjb" sceneMemberID="viewController">
@@ -80,11 +80,27 @@
                         <viewLayoutGuide key="safeArea" id="d2w-Mg-55d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="7Ky-4d-2Vk"/>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="7Ky-4d-2Vk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRI-8T-LiX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2341" y="1541"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hvr-W3-1cN">
+            <objects>
+                <viewController id="5qh-xR-Puc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sP9-XN-m4j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rWZ-6Z-Iq3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="9Lj-WJ-Ly7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ko-t8-yeQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3141" y="1541"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="naM-PZ-Mgh">
@@ -99,17 +115,18 @@
                         <segue destination="CvJ-Ls-pjb" kind="relationship" relationship="viewControllers" id="xzQ-UD-QQK"/>
                         <segue destination="r5k-cR-6pb" kind="relationship" relationship="viewControllers" id="q13-4L-s7Q"/>
                         <segue destination="MRF-UG-K4X" kind="relationship" relationship="viewControllers" id="4Kq-Nb-rT0"/>
+                        <segue destination="5qh-xR-Puc" kind="relationship" relationship="viewControllers" id="Di0-p4-lx2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sk-kW-mHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071" y="735"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="ooV-eP-zkv">
             <objects>
                 <navigationController id="MRF-UG-K4X" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="DyY-GL-gTg"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="DyY-GL-gTg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9bz-FU-aGq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -120,10 +137,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ed-V5-G1K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="1541"/>
+            <point key="canvasLocation" x="678" y="1541"/>
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="mappin.square" catalog="system" width="128" height="114"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
