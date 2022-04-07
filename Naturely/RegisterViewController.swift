@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class RegisterViewController: UIViewController {
     @IBOutlet weak var firstname_textfield: UITextField!
@@ -23,9 +24,27 @@ class RegisterViewController: UIViewController {
 
 
     @IBAction func create_press(_ sender: Any) {
+        let user = PFUser()
+        user.username = username_textfield.text
+        user.email = email_textfield.text
+        user.password = password_textfield.text
+        
+        //creating user object
+        user.signUpInBackground {
+            (success, error) in
+            if success {
+                self.performSegue(withIdentifier: "", sender: nil)// segue to feed view controller
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
+        }
+        
     }
     
-    
+    //dismissing keyboard when user touches outside
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
