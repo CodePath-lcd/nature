@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Naturely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Naturely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,6 +47,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Log In">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="login_press:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPc-PH-UDr"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXY-Ps-eBC">
                                 <rect key="frame" x="20" y="792" width="374" height="70"/>
@@ -96,15 +99,20 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yz9-L3-ipe" secondAttribute="trailing" constant="20" id="ymo-9O-c28"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="login_button" destination="R1o-4k-D2e" id="awf-bM-6c9"/>
+                        <outlet property="password_textfield" destination="Yz9-L3-ipe" id="YDK-WW-YgV"/>
+                        <outlet property="username_textfield" destination="iPS-Qh-RMN" id="YPi-nb-j0w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="17.39130434782609" y="81.026785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--RegisterViewController-->
         <scene sceneID="fSy-lq-nLB">
             <objects>
-                <viewController id="HWt-R6-ztL" sceneMemberID="viewController">
+                <viewController title="RegisterViewController" id="HWt-R6-ztL" customClass="RegisterViewController" customModule="Naturely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euX-No-eYC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,6 +166,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Create Account">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="create_press:" destination="HWt-R6-ztL" eventType="touchUpInside" id="TAb-Sl-wVK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bpn-uO-cyi"/>
@@ -186,6 +197,14 @@
                             <constraint firstItem="XFx-06-Axi" firstAttribute="centerY" secondItem="euX-No-eYC" secondAttribute="centerY" id="yWd-Wv-KBd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="create_button" destination="qaS-yz-2bF" id="hkG-wj-hg0"/>
+                        <outlet property="email_textfield" destination="joH-MP-6eV" id="rVm-oF-Rf2"/>
+                        <outlet property="firstname_textfield" destination="Zcz-7Q-kEU" id="LKv-Dr-KF8"/>
+                        <outlet property="lastname_textfield" destination="uwh-MJ-exp" id="Gfl-ed-UoH"/>
+                        <outlet property="password_textfield" destination="XFx-06-Axi" id="2xV-bb-STw"/>
+                        <outlet property="username_textfield" destination="m4J-DK-Xn3" id="uoI-iH-Yud"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4No-Vb-Lbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
