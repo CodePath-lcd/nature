@@ -5,10 +5,10 @@ The following **required** functionality is completed:
 
 - [x] App launches to login page.
 - [x] User can choose to sign-up/register.
-- [ ] User can login and logout.
+- [x] User can login and logout.
 - [ ] User can scroll through posts on the feed screen
 - [ ] User can post a picture of their hike
-- [ ] User can view a map.
+- [x] User can view a map.
 - [ ] User can select a hike/activity on the map
 - [ ] Upon selecting hike user can create a group or join a group for chatting
 - [ ] User can view their profile
