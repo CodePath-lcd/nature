@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,68 +53,28 @@
             </objects>
             <point key="canvasLocation" x="1457" y="1541"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xsT-hF-6TQ">
+        <!--MapScreen-->
+        <scene sceneID="Xgx-ho-Lwv">
             <objects>
-                <viewController id="r5k-cR-6pb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="q6e-M5-dkp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="WOt-qj-qJB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="mappin.square" catalog="system" id="W67-lZ-dy2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Paz-a4-h50" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="MapScreen" id="JnT-K9-1hF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="aPF-Is-0XT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHK-9e-iZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-235" y="1541"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="7TN-P3-sd0">
-            <objects>
-                <viewController id="CvJ-Ls-pjb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4eR-h3-O5N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="d2w-Mg-55d"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="7Ky-4d-2Vk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oRI-8T-LiX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2341" y="1541"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Hvr-W3-1cN">
-            <objects>
-                <viewController id="5qh-xR-Puc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sP9-XN-m4j">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="rWZ-6Z-Iq3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="plus.app" catalog="system" id="9Lj-WJ-Ly7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ko-t8-yeQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3141" y="1541"/>
+            <point key="canvasLocation" x="1818" y="1076"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="naM-PZ-Mgh">
             <objects>
-                <tabBarController id="ZVK-zx-JCH" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="ZVK-zx-JCH" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="J3g-OY-bfL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="CvJ-Ls-pjb" kind="relationship" relationship="viewControllers" id="xzQ-UD-QQK"/>
-                        <segue destination="r5k-cR-6pb" kind="relationship" relationship="viewControllers" id="q13-4L-s7Q"/>
                         <segue destination="MRF-UG-K4X" kind="relationship" relationship="viewControllers" id="4Kq-Nb-rT0"/>
-                        <segue destination="5qh-xR-Puc" kind="relationship" relationship="viewControllers" id="Di0-p4-lx2"/>
+                        <segue destination="JnT-K9-1hF" kind="relationship" relationship="viewControllers" id="Mbl-Eq-iOa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sk-kW-mHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -125,7 +84,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ooV-eP-zkv">
             <objects>
-                <navigationController id="MRF-UG-K4X" sceneMemberID="viewController">
+                <navigationController wantsFullScreenLayout="YES" id="MRF-UG-K4X" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="DyY-GL-gTg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9bz-FU-aGq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -142,9 +101,6 @@
     </scenes>
     <resources>
         <image name="house" catalog="system" width="128" height="106"/>
-        <image name="mappin.square" catalog="system" width="128" height="114"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
