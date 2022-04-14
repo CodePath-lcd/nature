@@ -11,6 +11,7 @@ import Parse
 class LoginViewController: UIViewController {
     @IBOutlet weak var username_textfield: UITextField!
     @IBOutlet weak var password_textfield: UITextField!
+    @IBOutlet weak var warningLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,7 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "", sender: nil) //segue to feed viewcontroller
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
+                self.warningLabel.text = "Username or password is incorrect. Please try again."
             }
         }
     }

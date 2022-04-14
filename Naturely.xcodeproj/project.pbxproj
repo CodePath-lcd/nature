@@ -132,10 +132,10 @@
 			children = (
 				D00458C027F54020003E0503 /* Main.storyboard */,
 				D0F284D627FD18A2005C5603 /* FeedScreen.storyboard */,
-				D0F284D827FD18B8005C5603 /* PostScreen.storyboard */,
 				D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */,
-				D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */,
+				D0F284D827FD18B8005C5603 /* PostScreen.storyboard */,
 				D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */,
+				D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */,
 				D00458C527F54023003E0503 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;

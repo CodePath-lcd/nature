@@ -57,7 +57,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="login_press:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sPc-PH-UDr"/>
-                                    <segue destination="4WO-Il-ekI" kind="presentation" id="SdP-sO-4kb"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXY-Ps-eBC">
@@ -87,15 +86,24 @@
                                     <constraint firstAttribute="height" constant="70" id="5JG-aM-JrC"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS3-B5-ydu">
+                                <rect key="frame" x="20" y="478" width="374" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RXY-Ps-eBC" secondAttribute="trailing" constant="20" id="59n-RU-pL5"/>
+                            <constraint firstItem="jS3-B5-ydu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Oy-mF-58V"/>
                             <constraint firstItem="RXY-Ps-eBC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GCe-ZL-zql"/>
+                            <constraint firstItem="jS3-B5-ydu" firstAttribute="top" secondItem="R1o-4k-D2e" secondAttribute="bottom" constant="8" symbolic="YES" id="Jzv-jf-VY1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R1o-4k-D2e" secondAttribute="trailing" constant="20" id="NZg-ah-TGO"/>
                             <constraint firstItem="R1o-4k-D2e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Oex-Ua-yhX"/>
                             <constraint firstItem="R1o-4k-D2e" firstAttribute="top" secondItem="Yz9-L3-ipe" secondAttribute="bottom" constant="34" id="ZZl-9b-ojj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jS3-B5-ydu" secondAttribute="trailing" constant="20" id="aIT-Xv-KB5"/>
                             <constraint firstItem="RXY-Ps-eBC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bqS-Ns-AkC"/>
                             <constraint firstItem="Yz9-L3-ipe" firstAttribute="top" secondItem="iPS-Qh-RMN" secondAttribute="bottom" constant="14" id="cfH-WP-hbA"/>
                             <constraint firstItem="Rvo-1z-C5d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dc4-GV-R1v"/>
@@ -104,6 +112,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iPS-Qh-RMN" secondAttribute="trailing" constant="20" id="myg-bH-dhq"/>
                             <constraint firstItem="iPS-Qh-RMN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p68-fe-6cY"/>
                             <constraint firstItem="iPS-Qh-RMN" firstAttribute="top" secondItem="Rvo-1z-C5d" secondAttribute="bottom" constant="48" id="uqU-ot-aYI"/>
+                            <constraint firstItem="jS3-B5-ydu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xuQ-Xm-7FC"/>
                             <constraint firstItem="R1o-4k-D2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYG-7H-L2j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yz9-L3-ipe" secondAttribute="trailing" constant="20" id="ymo-9O-c28"/>
                         </constraints>
@@ -111,6 +120,8 @@
                     <connections>
                         <outlet property="password_textfield" destination="Yz9-L3-ipe" id="YDK-WW-YgV"/>
                         <outlet property="username_textfield" destination="iPS-Qh-RMN" id="YPi-nb-j0w"/>
+                        <outlet property="warningLabel" destination="jS3-B5-ydu" id="0sx-Y6-smB"/>
+                        <segue destination="4WO-Il-ekI" kind="presentation" id="SPT-29-Odl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -225,6 +236,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
