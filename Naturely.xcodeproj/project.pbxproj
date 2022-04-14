@@ -15,6 +15,7 @@
 		A02D97C9280277CB00FF5374 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D97C8280277CB00FF5374 /* MapViewController.swift */; };
 		A0E85EE627FE7C5500F48C34 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E85EE527FE7C5500F48C34 /* RegisterViewController.swift */; };
 		BB15B87295B47FB0008F0D7D /* Pods_NaturelyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */; };
+		CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB00C7CE2807B7510048B211 /* ProfileViewController.swift */; };
 		D00458BB27F54020003E0503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BA27F54020003E0503 /* AppDelegate.swift */; };
 		D00458BD27F54020003E0503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BC27F54020003E0503 /* SceneDelegate.swift */; };
 		D00458BF27F54020003E0503 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BE27F54020003E0503 /* LoginViewController.swift */; };
@@ -60,6 +61,7 @@
 		A0E85EE527FE7C5500F48C34 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B99D8BF4445610A3967BCCEB /* Pods-NaturelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturelyTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturelyTests/Pods-NaturelyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naturely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB00C7CE2807B7510048B211 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D00458B727F54020003E0503 /* Naturely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naturely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00458BA27F54020003E0503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D00458BC27F54020003E0503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		D00458AE27F54020003E0503 = {
 			isa = PBXGroup;
 			children = (
+				CB00C7CE2807B7510048B211 /* ProfileViewController.swift */,
 				D00458B927F54020003E0503 /* Naturely */,
 				D00458D027F54023003E0503 /* NaturelyTests */,
 				D00458DA27F54023003E0503 /* NaturelyUITests */,
@@ -482,6 +485,7 @@
 				D00458BD27F54020003E0503 /* SceneDelegate.swift in Sources */,
 				A0E85EE627FE7C5500F48C34 /* RegisterViewController.swift in Sources */,
 				A02D97C42802457C00FF5374 /* API.swift in Sources */,
+				CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */,
 				A02D97C9280277CB00FF5374 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
