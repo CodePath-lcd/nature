@@ -31,10 +31,11 @@ class LoginViewController: UIViewController {
         PFUser.logInWithUsername(inBackground: username, password: password) {
             (user, error) in
             if user != nil {
-                self.performSegue(withIdentifier: "", sender: nil) //segue to feed viewcontroller
+                // identifier was missing
+                self.performSegue(withIdentifier: "feed", sender: nil) //segue to feed viewcontroller
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
-                self.warningLabel.text = "Username or password is incorrect. Please try again."
+                self.warningLabel.text = "Username and/or password is incorrect. Please try again."
             }
         }
     }

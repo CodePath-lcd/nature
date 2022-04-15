@@ -147,6 +147,7 @@
 				D00458BE27F54020003E0503 /* LoginViewController.swift */,
 				A0E85EE527FE7C5500F48C34 /* RegisterViewController.swift */,
 				A02D97C8280277CB00FF5374 /* MapViewController.swift */,
+				CB00C7CE2807B7510048B211 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -183,7 +184,6 @@
 		D00458AE27F54020003E0503 = {
 			isa = PBXGroup;
 			children = (
-				CB00C7CE2807B7510048B211 /* ProfileViewController.swift */,
 				D00458B927F54020003E0503 /* Naturely */,
 				D00458D027F54023003E0503 /* NaturelyTests */,
 				D00458DA27F54023003E0503 /* NaturelyUITests */,

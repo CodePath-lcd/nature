@@ -15,6 +15,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var email_textfield: UITextField!
     @IBOutlet weak var password_textfield: UITextField!
     @IBOutlet weak var create_button: UIButton!
+    @IBOutlet weak var warningLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +26,25 @@ class RegisterViewController: UIViewController {
 
     @IBAction func create_press(_ sender: Any) {
         let user = PFUser()
+        
         user.username = username_textfield.text
         user.email = email_textfield.text
         user.password = password_textfield.text
+        
+        user["name"] = firstname_textfield.text
+        user["surname"] = lastname_textfield.text
         
         //creating user object
         user.signUpInBackground {
             (success, error) in
             if success {
-                self.performSegue(withIdentifier: "", sender: nil)// segue to feed view controller
+                // identifier was missing
+                self.performSegue(withIdentifier: "welcome", sender: nil)// segue to feed view controller
             } else {
                 print("Error: \(String(describing: error?.localizedDescription))")
+                
+                // replace with specific warnings for each field **
+                self.warningLabel.text = "Please make sure all fields are complete."
             }
         }
         
