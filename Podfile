@@ -9,6 +9,7 @@ target 'Naturely' do
 
 	pod 'Parse'
 	pod 'AlamofireImage'
+	pod 'MessageInputBar'
 
   target 'NaturelyTests' do
     inherit! :search_paths

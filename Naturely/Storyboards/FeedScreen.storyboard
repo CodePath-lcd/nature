@@ -185,8 +185,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="commentLabel" destination="tWH-Fb-bfM" id="jef-NX-Swt"/>
-                                            <outlet property="nameLabel" destination="YPT-ZX-EVN" id="H27-Gm-zyC"/>
+                                            <outlet property="commentLabel" destination="tWH-Fb-bfM" id="9YB-OD-CRM"/>
+                                            <outlet property="nameLabel" destination="YPT-ZX-EVN" id="M5b-5O-7NB"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="IOE-Kl-2Dp">
