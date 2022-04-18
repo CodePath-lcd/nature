@@ -16,6 +16,9 @@
 		A0E85EE627FE7C5500F48C34 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E85EE527FE7C5500F48C34 /* RegisterViewController.swift */; };
 		BB15B87295B47FB0008F0D7D /* Pods_NaturelyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */; };
 		CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB00C7CE2807B7510048B211 /* ProfileViewController.swift */; };
+		CB4203E7280E0BB900E705CB /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4203E6280E0BB900E705CB /* CameraViewController.swift */; };
+		CB4203E9280E113A00E705CB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4203E8280E113900E705CB /* PostCell.swift */; };
+		CB4203EB280E133700E705CB /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4203EA280E133700E705CB /* FeedViewController.swift */; };
 		D00458BB27F54020003E0503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BA27F54020003E0503 /* AppDelegate.swift */; };
 		D00458BD27F54020003E0503 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BC27F54020003E0503 /* SceneDelegate.swift */; };
 		D00458BF27F54020003E0503 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00458BE27F54020003E0503 /* LoginViewController.swift */; };
@@ -62,6 +65,9 @@
 		B99D8BF4445610A3967BCCEB /* Pods-NaturelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturelyTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturelyTests/Pods-NaturelyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naturely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB00C7CE2807B7510048B211 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CB4203E6280E0BB900E705CB /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CB4203E8280E113900E705CB /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		CB4203EA280E133700E705CB /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		D00458B727F54020003E0503 /* Naturely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naturely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00458BA27F54020003E0503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D00458BC27F54020003E0503 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +154,9 @@
 				A0E85EE527FE7C5500F48C34 /* RegisterViewController.swift */,
 				A02D97C8280277CB00FF5374 /* MapViewController.swift */,
 				CB00C7CE2807B7510048B211 /* ProfileViewController.swift */,
+				CB4203E8280E113900E705CB /* PostCell.swift */,
+				CB4203E6280E0BB900E705CB /* CameraViewController.swift */,
+				CB4203EA280E133700E705CB /* FeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -486,7 +495,10 @@
 				A0E85EE627FE7C5500F48C34 /* RegisterViewController.swift in Sources */,
 				A02D97C42802457C00FF5374 /* API.swift in Sources */,
 				CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */,
+				CB4203EB280E133700E705CB /* FeedViewController.swift in Sources */,
 				A02D97C9280277CB00FF5374 /* MapViewController.swift in Sources */,
+				CB4203E7280E0BB900E705CB /* CameraViewController.swift in Sources */,
+				CB4203E9280E113A00E705CB /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
