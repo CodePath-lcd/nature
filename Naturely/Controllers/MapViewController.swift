@@ -13,31 +13,28 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    let mapRefresh = UIRefreshControl()
     var hikesArray: [Hike] = []
+    
+    let mapRefresh = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let centerLocation = CLLocation(latitude: 37.3022, longitude: -120.4830)
         goToLocation(location: centerLocation)
         getAPIData()
         mapRefresh.addTarget(self, action: #selector(getAPIData), for: .valueChanged)
-        addAnnotationAtCoordinate(dicts: hikesArray)
+        print(self.hikesArray.endIndex)
+        //addAnnotationAtCoordinate(dicts: hikesArray)
+
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        mapRefresh.addTarget(self, action: #selector(getAPIData), for: .valueChanged)
-        addAnnotationAtCoordinate(dicts: hikesArray)
-    }
-    
-    @objc func getAPIData(){
-        API.getHikes() {(hikes) in
+    @objc func getAPIData() -> Void{
+        API.getHikes() { (hikes) in
             guard let hikes = hikes else {
                 return
             }
             self.hikesArray = hikes
-            self.addAnnotationAtCoordinate(dicts: self.hikesArray)
             self.mapRefresh.endRefreshing()
         }
     }
@@ -59,9 +56,9 @@ class MapViewController: UIViewController {
             let coordinate = CLLocationCoordinate2D.init(latitude: lat, longitude: long)
             annotation.coordinate = coordinate
             annotation.title = hike.name
+            print(hike.name)
             mapView.addAnnotation(annotation)
         }
-        
     }
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {

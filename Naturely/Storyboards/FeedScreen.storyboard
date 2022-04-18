@@ -82,7 +82,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ooV-eP-zkv">
             <objects>
-                <navigationController wantsFullScreenLayout="YES" id="MRF-UG-K4X" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" wantsFullScreenLayout="YES" id="MRF-UG-K4X" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="DyY-GL-gTg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9bz-FU-aGq">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -190,14 +190,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="IOE-Kl-2Dp">
-                                        <rect key="frame" x="0.0" y="483.5" width="414" height="37.5"/>
+                                        <rect key="frame" x="0.0" y="483.5" width="414" height="37"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IOE-Kl-2Dp" id="h4e-Pb-pQd">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="37"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9c-Xx-Yjb">
-                                                    <rect key="frame" x="16" y="8" width="390" height="21.5"/>
+                                                    <rect key="frame" x="16" y="8" width="390" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -220,7 +220,7 @@
                     <navigationItem key="navigationItem" id="pPS-vz-2fE">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="Wny-Uh-Ntm">
                             <connections>
-                                <action selector="onLogoutButton:" destination="HFe-LD-WAR" id="A2h-Bd-cCH"/>
+                                <action selector="onLogoutButton:" destination="HFe-LD-WAR" id="yLp-As-zO8"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="camera.fill" catalog="system" id="fqC-0M-J4e">

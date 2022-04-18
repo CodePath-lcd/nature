@@ -16,18 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dt6-Et-vJ2">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dt6-Et-vJ2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="dt6-Et-vJ2" secondAttribute="bottom" id="M7w-dg-a0p"/>
-                            <constraint firstItem="dt6-Et-vJ2" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="e0v-7y-ErA"/>
-                            <constraint firstItem="dt6-Et-vJ2" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gPj-rg-zit"/>
-                            <constraint firstItem="dt6-Et-vJ2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pGB-B8-R7P"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="map" catalog="system" id="FV9-D2-yCZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>

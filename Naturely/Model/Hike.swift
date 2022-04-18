@@ -20,9 +20,5 @@ class Hike {
         name = dict["name"] as! String
         coordinates = dict["coordinates"] as! [String: Double];
     }
-    init(imageUrl: URL?, name: String, coordinates: [String: Double]) {
-        self.imageURL = imageUrl
-        self.name = name
-        self.coordinates = coordinates
-    }
+    
 }
