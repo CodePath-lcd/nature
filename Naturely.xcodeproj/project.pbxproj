@@ -13,6 +13,7 @@
 		A02D97C42802457C00FF5374 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D97C32802457C00FF5374 /* API.swift */; };
 		A02D97C7280251A100FF5374 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D97C6280251A100FF5374 /* Hike.swift */; };
 		A02D97C9280277CB00FF5374 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02D97C8280277CB00FF5374 /* MapViewController.swift */; };
+		A06CBDAF280E541D001929E6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A06CBDAE280E541D001929E6 /* ChatViewController.swift */; };
 		A0E85EE627FE7C5500F48C34 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E85EE527FE7C5500F48C34 /* RegisterViewController.swift */; };
 		BB15B87295B47FB0008F0D7D /* Pods_NaturelyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF4B474D8CE955EAC566E02 /* Pods_NaturelyTests.framework */; };
 		CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB00C7CE2807B7510048B211 /* ProfileViewController.swift */; };
@@ -62,6 +63,7 @@
 		A02D97C32802457C00FF5374 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		A02D97C6280251A100FF5374 /* Hike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		A02D97C8280277CB00FF5374 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A06CBDAE280E541D001929E6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A0E85EE527FE7C5500F48C34 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B99D8BF4445610A3967BCCEB /* Pods-NaturelyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturelyTests.debug.xcconfig"; path = "Target Support Files/Pods-NaturelyTests/Pods-NaturelyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naturely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 				CB4203E8280E113900E705CB /* PostCell.swift */,
 				CB4203E6280E0BB900E705CB /* CameraViewController.swift */,
 				CB4203EA280E133700E705CB /* FeedViewController.swift */,
+				A06CBDAE280E541D001929E6 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */,
 				CB4203EB280E133700E705CB /* FeedViewController.swift in Sources */,
 				A02D97C9280277CB00FF5374 /* MapViewController.swift in Sources */,
+				A06CBDAF280E541D001929E6 /* ChatViewController.swift in Sources */,
 				CB4203E7280E0BB900E705CB /* CameraViewController.swift in Sources */,
 				CB4203E9280E113A00E705CB /* PostCell.swift in Sources */,
 				CB35F8E9280E27F300189C73 /* CommentCell.swift in Sources */,
@@ -682,7 +686,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DB7SD54R3C;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Naturely/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -711,7 +715,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = DB7SD54R3C;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Naturely/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

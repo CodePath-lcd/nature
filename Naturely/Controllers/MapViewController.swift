@@ -9,13 +9,12 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    
-    var hikesArray: [Hike] = []
-    
     let mapRefresh = UIRefreshControl()
+    var annotationView: MKAnnotationView!
+    var hikesArray: [Hike] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +23,15 @@ class MapViewController: UIViewController {
         goToLocation(location: centerLocation)
         getAPIData()
         mapRefresh.addTarget(self, action: #selector(getAPIData), for: .valueChanged)
-        print(self.hikesArray.endIndex)
-        //addAnnotationAtCoordinate(dicts: hikesArray)
-
+        addAnnotationAtCoordinate(dicts: hikesArray)
+        mapView.delegate = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            mapRefresh.addTarget(self, action: #selector(getAPIData), for: .valueChanged)
+            addAnnotationAtCoordinate(dicts: hikesArray)
+        }
     
     @objc func getAPIData() -> Void{
         API.getHikes() { (hikes) in
@@ -35,6 +39,7 @@ class MapViewController: UIViewController {
                 return
             }
             self.hikesArray = hikes
+            self.addAnnotationAtCoordinate(dicts: self.hikesArray)
             self.mapRefresh.endRefreshing()
         }
     }
@@ -56,24 +61,40 @@ class MapViewController: UIViewController {
             let coordinate = CLLocationCoordinate2D.init(latitude: lat, longitude: long)
             annotation.coordinate = coordinate
             annotation.title = hike.name
-            print(hike.name)
             mapView.addAnnotation(annotation)
         }
     }
     
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-        let identifier = "customAnnotationView"
-            // custom pin annotation
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
-            if (annotationView == nil) {
-                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            }
-            else {
-                annotationView!.annotation = annotation
-            }
-            //annotationView!.pinTintColor = UIColor.green
+    //configure annotation view using protocol method
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let reuseID = "myAnnotation"
         
-            return annotationView
+        annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseID)
+        
+        if(annotationView == nil) {
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseID)
+            annotationView?.canShowCallout = true
+            
+            //add infor button to annotation view
+            let annotationViewButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+            annotationView?.leftCalloutAccessoryView = annotationViewButton
+        }
+        
+        return annotationView
+    }
+    
+    //action to execute when user taps annotation views accessory buttons
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        //performSegure to chatscreen
+        //self.performSegue(withIdentifier: "toChatScreen", sender: self)
+        tabBarController?.selectedIndex = 3
+    }
+
+    
+    //conform to chat message view controller
+    func chats(controller: ChatViewController, image: UIImage) {
+        let annotationViewButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        annotationView?.leftCalloutAccessoryView = annotationViewButton
     }
 
     /*
