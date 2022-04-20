@@ -161,6 +161,7 @@
 				A02D97C8280277CB00FF5374 /* MapViewController.swift */,
 				CB00C7CE2807B7510048B211 /* ProfileViewController.swift */,
 				CB4203E8280E113900E705CB /* PostCell.swift */,
+				CB35F8E8280E27F200189C73 /* CommentCell.swift */,
 				CB4203E6280E0BB900E705CB /* CameraViewController.swift */,
 				CB4203EA280E133700E705CB /* FeedViewController.swift */,
 				A06CBDAE280E541D001929E6 /* ChatViewController.swift */,
@@ -201,7 +202,6 @@
 		D00458AE27F54020003E0503 = {
 			isa = PBXGroup;
 			children = (
-				CB35F8E8280E27F200189C73 /* CommentCell.swift */,
 				D00458B927F54020003E0503 /* Naturely */,
 				D00458D027F54023003E0503 /* NaturelyTests */,
 				D00458DA27F54023003E0503 /* NaturelyUITests */,
