@@ -14,12 +14,12 @@
                 <viewControllerPlaceholder storyboardName="FeedScreen" id="4WO-Il-ekI" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sO8-dq-KAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-649" y="-86"/>
+            <point key="canvasLocation" x="17" y="516"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Naturely" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="main" title="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Naturely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,17 +234,17 @@
                         <outlet property="password_textfield" destination="XFx-06-Axi" id="2xV-bb-STw"/>
                         <outlet property="username_textfield" destination="m4J-DK-Xn3" id="uoI-iH-Yud"/>
                         <outlet property="warningLabel" destination="HRs-St-mzi" id="qk9-ae-iaP"/>
-                        <segue destination="S7L-Tp-FYL" kind="presentation" identifier="welcome" id="BJg-0C-wyL"/>
+                        <segue destination="OYX-wt-Pvh" kind="presentation" id="d65-x6-BRm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4No-Vb-Lbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742.02898550724649" y="81.696428571428569"/>
+            <point key="canvasLocation" x="772" y="82"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Verification View Controller-->
         <scene sceneID="SoY-TN-WDA">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="S7L-Tp-FYL" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="S7L-Tp-FYL" customClass="PhotoVerificationViewController" customModule="Naturely" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tlq-7L-Iqx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,36 +263,52 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JY3-Ao-1Sh">
-                                <rect key="frame" x="143" y="251" width="128" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GG5-Qo-kse">
-                                <rect key="frame" x="168" y="410" width="78" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Upload">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
-                                </buttonConfiguration>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Face picture is required to keep our community safe." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLk-LY-4B7">
-                                <rect key="frame" x="23" y="811" width="368" height="51"/>
+                                <rect key="frame" x="23" y="782" width="368" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-upload-icon-260nw-1055528567 copy" translatesAutoresizingMaskIntoConstraints="NO" id="9Fq-Fg-kGP">
+                                <rect key="frame" x="101.5" y="342.5" width="211" height="211"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hyi-uA-Jpj" appends="YES" id="VvO-yx-TmN"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You will need to verify it is you in the picture." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-bf-rvq">
+                                <rect key="frame" x="31" y="841" width="352" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nTa-if-cfF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Fq-Fg-kGP" firstAttribute="centerX" secondItem="Tlq-7L-Iqx" secondAttribute="centerX" id="VUv-jd-jQ6"/>
+                            <constraint firstItem="9Fq-Fg-kGP" firstAttribute="centerY" secondItem="Tlq-7L-Iqx" secondAttribute="centerY" id="eqC-jX-UlP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iBX-CO-Esp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hyi-uA-Jpj"/>
             </objects>
             <point key="canvasLocation" x="1521.7391304347827" y="81.696428571428569"/>
         </scene>
+        <!--FeedScreen-->
+        <scene sceneID="2VE-en-dzq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FeedScreen" id="OYX-wt-Pvh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Noj-OL-a5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="516"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="camera-upload-icon-260nw-1055528567 copy" width="211" height="211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
