@@ -187,6 +187,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="create_press:" destination="HWt-R6-ztL" eventType="touchUpInside" id="TAb-Sl-wVK"/>
+                                    <segue destination="S7L-Tp-FYL" kind="presentation" identifier="welcome" id="QNH-BD-oCr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRs-St-mzi">
@@ -234,7 +235,6 @@
                         <outlet property="password_textfield" destination="XFx-06-Axi" id="2xV-bb-STw"/>
                         <outlet property="username_textfield" destination="m4J-DK-Xn3" id="uoI-iH-Yud"/>
                         <outlet property="warningLabel" destination="HRs-St-mzi" id="qk9-ae-iaP"/>
-                        <segue destination="OYX-wt-Pvh" kind="presentation" id="d65-x6-BRm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4No-Vb-Lbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -270,9 +270,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-upload-icon-260nw-1055528567 copy" translatesAutoresizingMaskIntoConstraints="NO" id="9Fq-Fg-kGP">
                                 <rect key="frame" x="101.5" y="342.5" width="211" height="211"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="hyi-uA-Jpj" appends="YES" id="VvO-yx-TmN"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will need to verify it is you in the picture." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbG-bf-rvq">
                                 <rect key="frame" x="20" y="822.5" width="374" height="19.5"/>
@@ -280,9 +277,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvH-47-IlR">
+                                <rect key="frame" x="347" y="57" width="46" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system"/>
+                                <connections>
+                                    <action selector="onNextButton:" destination="S7L-Tp-FYL" eventType="touchUpInside" id="TsS-kl-COT"/>
+                                    <segue destination="ckT-6t-avZ" kind="presentation" id="E14-pu-7mR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nTa-if-cfF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="NHC-S8-sUo" firstAttribute="leading" secondItem="nTa-if-cfF" secondAttribute="leading" constant="20" id="01h-3x-Ve6"/>
                             <constraint firstItem="o7R-2V-JZB" firstAttribute="leading" secondItem="nTa-if-cfF" secondAttribute="leading" constant="20" id="2Qc-ic-hlz"/>
@@ -301,12 +309,30 @@
                             <constraint firstItem="FLk-LY-4B7" firstAttribute="leading" secondItem="nTa-if-cfF" secondAttribute="leading" constant="20" id="y7x-mv-U1U"/>
                             <constraint firstItem="pbG-bf-rvq" firstAttribute="top" secondItem="FLk-LY-4B7" secondAttribute="bottom" constant="9" id="yoe-QQ-AZc"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="9wV-B8-5Ov" appends="YES" id="R45-bz-0r3"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="profileImageView" destination="9Fq-Fg-kGP" id="jtC-ia-PnO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iBX-CO-Esp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="hyi-uA-Jpj"/>
+                <tapGestureRecognizer id="9wV-B8-5Ov">
+                    <connections>
+                        <action selector="onCameraButton:" destination="S7L-Tp-FYL" id="48X-xb-FbJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1521.7391304347827" y="81.696428571428569"/>
+            <point key="canvasLocation" x="1649" y="-68"/>
+        </scene>
+        <!--FeedScreen-->
+        <scene sceneID="cif-MF-wPh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FeedScreen" id="ckT-6t-avZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jIw-oP-ks4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2355" y="29"/>
         </scene>
         <!--FeedScreen-->
         <scene sceneID="2VE-en-dzq">
@@ -318,6 +344,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="camera-upload-icon-260nw-1055528567 copy" width="211" height="211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
