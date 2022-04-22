@@ -334,14 +334,6 @@
             </objects>
             <point key="canvasLocation" x="2355" y="29"/>
         </scene>
-        <!--FeedScreen-->
-        <scene sceneID="2VE-en-dzq">
-            <objects>
-                <viewControllerPlaceholder storyboardName="FeedScreen" id="OYX-wt-Pvh" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Noj-OL-a5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="771" y="516"/>
-        </scene>
     </scenes>
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>

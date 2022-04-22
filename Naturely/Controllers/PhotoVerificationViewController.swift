@@ -35,23 +35,9 @@ class PhotoVerificationViewController: UIViewController, UIImagePickerController
         present(picker, animated: true, completion: nil)
         
     }
-    
-    //user can pick the image for profile
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[.editedImage] as! UIImage
-        
-        let size = CGSize(width: 128, height: 128)
-        let scaledImage = image.af.imageScaled(to: size)
-        
-        profileImageView.image = scaledImage
-        dismiss(animated: true, completion: nil)
-        
 
-    }
     
     //images need to be saved in files
-    
-
     @IBAction func onNextButton(_ sender: Any) {
         
         let imageData = profileImageView.image!.pngData()
@@ -66,8 +52,21 @@ class PhotoVerificationViewController: UIViewController, UIImagePickerController
                 print("Error: \(String(describing: error))")
             }
         }
-
+    }
+    
+    
+    //user can pick the image for profile
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
         
+        let size = CGSize(width: 128, height: 128)
+        let scaledImage = image.af.imageScaled(to: size)
+        
+        profileImageView.image = scaledImage
+        
+        dismiss(animated: true, completion: nil)
+        
+
     }
   
     /*
