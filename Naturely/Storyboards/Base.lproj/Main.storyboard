@@ -284,7 +284,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="S7L-Tp-FYL" eventType="touchUpInside" id="TsS-kl-COT"/>
-                                    <segue destination="ckT-6t-avZ" kind="presentation" id="E14-pu-7mR"/>
+                                    <segue destination="ckT-6t-avZ" kind="presentation" identifier="goToFeed" id="E14-pu-7mR"/>
                                 </connections>
                             </button>
                         </subviews>

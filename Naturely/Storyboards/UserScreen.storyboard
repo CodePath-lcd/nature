@@ -20,9 +20,6 @@
                                 <rect key="frame" x="20" y="91" width="186" height="178"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Va0-lz-BqE" appends="YES" id="5qi-h7-nnL"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyW-Bh-pjh">
                                 <rect key="frame" x="222" y="91" width="84" height="19"/>
@@ -42,6 +39,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vFD-Pq-NiI" appends="YES" id="nMt-MC-mPg"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person" catalog="system" id="lYz-mI-6n4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -51,9 +52,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Va0-lz-BqE">
+                <tapGestureRecognizer id="vFD-Pq-NiI">
                     <connections>
-                        <action selector="onProfileTap:" destination="Y6W-OH-hqX" id="ZJh-Qs-5Ib"/>
+                        <action selector="onProfileTap:" destination="Y6W-OH-hqX" id="IRr-tZ-mbt"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

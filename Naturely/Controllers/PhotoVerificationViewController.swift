@@ -47,7 +47,8 @@ class PhotoVerificationViewController: UIViewController, UIImagePickerController
         PFUser.current()?
             .saveInBackground { success, error in
             if success {
-                self.dismiss(animated: true, completion: nil)
+                print("Saved!")
+                self.performSegue(withIdentifier: "goToFeed", sender: nil)
             } else {
                 print("Error: \(String(describing: error))")
             }
