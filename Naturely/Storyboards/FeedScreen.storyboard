@@ -34,7 +34,7 @@
                 <viewControllerPlaceholder storyboardName="PostScreen" id="hbU-VB-aBl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OqI-G9-R3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480" y="1440"/>
+            <point key="canvasLocation" x="1245" y="1475"/>
         </scene>
         <!--ChatScreen-->
         <scene sceneID="pry-6u-zYW">
@@ -109,27 +109,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="402" id="ip9-Id-vsM" customClass="PostCell" customModule="Naturely" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="402"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="467" id="ip9-Id-vsM" customClass="PostCell" customModule="Naturely" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="467"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ip9-Id-vsM" id="JG8-sW-BLn">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="402"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="467"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-eK-cn6">
-                                                    <rect key="frame" x="8" y="8" width="398" height="340"/>
+                                                    <rect key="frame" x="0.0" y="8" width="414" height="414"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="RZl-eK-cn6" secondAttribute="height" multiplier="199:170" id="CT1-21-bXD"/>
+                                                        <constraint firstAttribute="width" secondItem="RZl-eK-cn6" secondAttribute="height" multiplier="1:1" id="CT1-21-bXD"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNr-T0-1x2">
-                                                    <rect key="frame" x="16" y="356" width="45" height="31"/>
+                                                    <rect key="frame" x="16" y="430" width="45" height="22"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ur-3J-6jN">
-                                                    <rect key="frame" x="65" y="356" width="344" height="31"/>
+                                                    <rect key="frame" x="65" y="430" width="344" height="22"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -142,8 +142,8 @@
                                                 <constraint firstItem="7ur-3J-6jN" firstAttribute="leading" secondItem="kNr-T0-1x2" secondAttribute="trailing" constant="4" id="R5Y-yA-X80"/>
                                                 <constraint firstItem="RZl-eK-cn6" firstAttribute="top" secondItem="JG8-sW-BLn" secondAttribute="top" constant="8" id="eFq-49-0iW"/>
                                                 <constraint firstItem="kNr-T0-1x2" firstAttribute="top" secondItem="RZl-eK-cn6" secondAttribute="bottom" constant="8" id="ic9-na-FKN"/>
-                                                <constraint firstItem="RZl-eK-cn6" firstAttribute="leading" secondItem="JG8-sW-BLn" secondAttribute="leading" constant="8" id="idB-FT-biP"/>
-                                                <constraint firstAttribute="trailing" secondItem="RZl-eK-cn6" secondAttribute="trailing" constant="8" id="q9O-4r-S7f"/>
+                                                <constraint firstItem="RZl-eK-cn6" firstAttribute="leading" secondItem="JG8-sW-BLn" secondAttribute="leading" id="idB-FT-biP"/>
+                                                <constraint firstAttribute="trailing" secondItem="RZl-eK-cn6" secondAttribute="trailing" id="q9O-4r-S7f"/>
                                                 <constraint firstAttribute="bottom" secondItem="7ur-3J-6jN" secondAttribute="bottom" constant="15" id="rxw-hr-j2T"/>
                                                 <constraint firstItem="7ur-3J-6jN" firstAttribute="top" secondItem="RZl-eK-cn6" secondAttribute="bottom" constant="8" id="wFj-g5-s76"/>
                                             </constraints>
@@ -154,20 +154,20 @@
                                             <outlet property="usernameLabel" destination="kNr-T0-1x2" id="8h7-x3-D5C"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="wBP-Dj-2LA" customClass="CommentCell" customModule="Naturely" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="446.5" width="414" height="35.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="35" id="wBP-Dj-2LA" customClass="CommentCell" customModule="Naturely" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="511.5" width="414" height="35"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wBP-Dj-2LA" id="m1r-u0-pcK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="35.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPT-ZX-EVN">
-                                                    <rect key="frame" x="16" y="8" width="45" height="19.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPT-ZX-EVN">
+                                                    <rect key="frame" x="16" y="8" width="45" height="19"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWH-Fb-bfM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWH-Fb-bfM">
                                                     <rect key="frame" x="69" y="8" width="131" height="19"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -190,7 +190,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="IOE-Kl-2Dp">
-                                        <rect key="frame" x="0.0" y="482" width="414" height="36.5"/>
+                                        <rect key="frame" x="0.0" y="546.5" width="414" height="36.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IOE-Kl-2Dp" id="h4e-Pb-pQd">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="36.5"/>

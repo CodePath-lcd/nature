@@ -11,6 +11,15 @@ target 'Naturely' do
 	pod 'AlamofireImage'
 	pod 'MessageInputBar'
 
+  # chat user interphases
+	pod 'MessageKit'
+  # Spinner overlay
+	pod 'JGProgressHUD'
+  # Database to access some data without internet
+	pod 'RealmSwift'
+  # Image load capabilities
+	pod 'SDWebImage'
+
   target 'NaturelyTests' do
     inherit! :search_paths
     # Pods for testing
