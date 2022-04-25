@@ -11,7 +11,7 @@ import AlamofireImage
 import MessageInputBar
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MessageInputBarDelegate {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     let commentBar = MessageInputBar()
@@ -48,7 +48,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     override var inputAccessoryView: UIView?{
         return commentBar
     }
-     
+    
     override var canBecomeFirstResponder: Bool{
         return showsCommentBar
     }
@@ -72,19 +72,19 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         //create the comment
         let comment = PFObject(className: "Comments")
-            comment["text"] = text
-            comment["post"] = selectedPost
-            comment["author"] = PFUser.current()!
+        comment["text"] = text
+        comment["post"] = selectedPost
+        comment["author"] = PFUser.current()!
         
-            selectedPost.add(comment, forKey: "comments")
+        selectedPost.add(comment, forKey: "comments")
         
-            selectedPost.saveInBackground { (success, error) in
-                if success{
-                    print("comment saved")
-                }else {
-                    print("error in saving comment")
-                }
+        selectedPost.saveInBackground { (success, error) in
+            if success{
+                print("comment saved")
+            }else {
+                print("error in saving comment")
             }
+        }
         tableView.reloadData()
         
         //clear and dismiss the input bar
@@ -99,7 +99,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let comments = (post["comments"] as? [PFObject]) ?? []
         
         return comments.count + 2
-
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -113,20 +113,20 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let comments = (post["comments"] as? [PFObject]) ?? []
         
         if indexPath.row == 0{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
-        
-        let user = post["author"] as! PFUser
-        
-        cell.usernameLabel.text = user.username
-        
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
+            
+            let user = post["author"] as! PFUser
+            
+            cell.usernameLabel.text = user.username
+            
             cell.captionLabel.text = post["caption"] as? String
-        
-        let imageFile = post["image"] as! PFFileObject
-        let urlString = imageFile.url!
-        let url = URL(string: urlString)!
-        
-        cell.photoView.af.setImage(withURL: url)
-        return cell
+            
+            let imageFile = post["image"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            
+            cell.photoView.af.setImage(withURL: url)
+            return cell
             
         }else if indexPath.row <= comments.count{
             let cell = tableView.dequeueReusableCell(withIdentifier: "CommentCell") as! CommentCell
@@ -156,18 +156,30 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             selectedPost = post
         }
         
-
+        
     }
     
-
+    
     @IBAction func onLogoutButton(_ sender: Any) {
-        PFUser.logOut()
         
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
-        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
-                delegate = windowScene.delegate as? SceneDelegate else {return}
-        delegate.window?.rootViewController = loginViewController
+        let actionSheet = UIAlertController(title: "", message: "You are about to log out", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Log Out", style: .destructive, handler: { _ in
+            
+            PFUser.logOut()
+            
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+            guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
+                    delegate = windowScene.delegate as? SceneDelegate else {return}
+            delegate.window?.rootViewController = loginViewController
+            self.present(loginViewController, animated: true)
+            
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(actionSheet, animated: true)
     }
     
 }

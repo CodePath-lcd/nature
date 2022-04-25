@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A6EBBF028162208002DE54E /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBEF28162207002DE54E /* ChatListViewController.swift */; };
+		5A6EBBF228162240002DE54E /* ChatScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF128162240002DE54E /* ChatScreen.storyboard */; };
 		5AF77C08280F5CF80039DFD1 /* PhotoVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */; };
 		7B233D0EED2E1B070C6F7726 /* Pods_Naturely_NaturelyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */; };
 		966917547CE38A535ACE8470 /* Pods_Naturely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */; };
@@ -35,7 +37,6 @@
 		D0F284D927FD18B8005C5603 /* PostScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284D827FD18B8005C5603 /* PostScreen.storyboard */; };
 		D0F284DB27FD18D7005C5603 /* MapScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */; };
 		D0F284DD27FD18F1005C5603 /* UserScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */; };
-		D0F284DF27FD1903005C5603 /* ChatScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */; };
 		D0F284E127FE731F005C5603 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F284E027FE731F005C5603 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		44B1E421D95F7E3E8454B065 /* Pods-NaturelyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaturelyTests.release.xcconfig"; path = "Target Support Files/Pods-NaturelyTests/Pods-NaturelyTests.release.xcconfig"; sourceTree = "<group>"; };
 		514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naturely_NaturelyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0AE595368115863FFD34E6 /* Pods-Naturely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely.debug.xcconfig"; path = "Target Support Files/Pods-Naturely/Pods-Naturely.debug.xcconfig"; sourceTree = "<group>"; };
+		5A6EBBEF28162207002DE54E /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		5A6EBBF128162240002DE54E /* ChatScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatScreen.storyboard; sourceTree = "<group>"; };
 		5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVerificationViewController.swift; sourceTree = "<group>"; };
 		5F45080F0D594EFCE9FDB259 /* Pods-Naturely-NaturelyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.release.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A02D97C32802457C00FF5374 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -91,7 +94,6 @@
 		D0F284D827FD18B8005C5603 /* PostScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostScreen.storyboard; sourceTree = "<group>"; };
 		D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapScreen.storyboard; sourceTree = "<group>"; };
 		D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserScreen.storyboard; sourceTree = "<group>"; };
-		D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatScreen.storyboard; sourceTree = "<group>"; };
 		D0F284E027FE731F005C5603 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E1CC442BB494A6B681140018 /* Pods-Naturely-NaturelyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7D77FE31AC011159CEEBCE5 /* Pods-Naturely.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely.release.xcconfig"; path = "Target Support Files/Pods-Naturely/Pods-Naturely.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,9 +148,9 @@
 				D0F284D627FD18A2005C5603 /* FeedScreen.storyboard */,
 				D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */,
 				D0F284D827FD18B8005C5603 /* PostScreen.storyboard */,
-				D0F284DE27FD1903005C5603 /* ChatScreen.storyboard */,
 				D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */,
 				D00458C527F54023003E0503 /* LaunchScreen.storyboard */,
+				5A6EBBF128162240002DE54E /* ChatScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -166,6 +168,7 @@
 				CB4203EA280E133700E705CB /* FeedViewController.swift */,
 				A06CBDAE280E541D001929E6 /* ChatViewController.swift */,
 				5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */,
+				5A6EBBEF28162207002DE54E /* ChatListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -366,7 +369,7 @@
 				D0F284D727FD18A3005C5603 /* FeedScreen.storyboard in Resources */,
 				D00458C727F54023003E0503 /* LaunchScreen.storyboard in Resources */,
 				D00458C427F54023003E0503 /* Assets.xcassets in Resources */,
-				D0F284DF27FD1903005C5603 /* ChatScreen.storyboard in Resources */,
+				5A6EBBF228162240002DE54E /* ChatScreen.storyboard in Resources */,
 				D0F284DB27FD18D7005C5603 /* MapScreen.storyboard in Resources */,
 				D00458C227F54020003E0503 /* Main.storyboard in Resources */,
 				D0F284D927FD18B8005C5603 /* PostScreen.storyboard in Resources */,
@@ -506,6 +509,7 @@
 				5AF77C08280F5CF80039DFD1 /* PhotoVerificationViewController.swift in Sources */,
 				CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */,
 				CB4203EB280E133700E705CB /* FeedViewController.swift in Sources */,
+				5A6EBBF028162208002DE54E /* ChatListViewController.swift in Sources */,
 				A02D97C9280277CB00FF5374 /* MapViewController.swift in Sources */,
 				A06CBDAF280E541D001929E6 /* ChatViewController.swift in Sources */,
 				CB4203E7280E0BB900E705CB /* CameraViewController.swift in Sources */,

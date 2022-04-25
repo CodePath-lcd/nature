@@ -14,7 +14,7 @@
                 <viewControllerPlaceholder storyboardName="FeedScreen" id="4WO-Il-ekI" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sO8-dq-KAU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17" y="516"/>
+            <point key="canvasLocation" x="17" y="502"/>
         </scene>
         <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -324,7 +324,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1649" y="-68"/>
+            <point key="canvasLocation" x="1536" y="82"/>
         </scene>
         <!--FeedScreen-->
         <scene sceneID="cif-MF-wPh">
@@ -332,7 +332,7 @@
                 <viewControllerPlaceholder storyboardName="FeedScreen" id="ckT-6t-avZ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jIw-oP-ks4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2355" y="29"/>
+            <point key="canvasLocation" x="2139" y="81"/>
         </scene>
     </scenes>
     <resources>
