@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5A6EBBF028162208002DE54E /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBEF28162207002DE54E /* ChatListViewController.swift */; };
 		5A6EBBF228162240002DE54E /* ChatScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF128162240002DE54E /* ChatScreen.storyboard */; };
+		5A6EBBF42816265D002DE54E /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF32816265D002DE54E /* ConversationViewController.swift */; };
+		5A6EBBF628174F01002DE54E /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF528174F01002DE54E /* ChatListTableViewCell.swift */; };
 		5AF77C08280F5CF80039DFD1 /* PhotoVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */; };
 		7B233D0EED2E1B070C6F7726 /* Pods_Naturely_NaturelyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */; };
 		966917547CE38A535ACE8470 /* Pods_Naturely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */; };
@@ -63,6 +65,8 @@
 		5A0AE595368115863FFD34E6 /* Pods-Naturely.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely.debug.xcconfig"; path = "Target Support Files/Pods-Naturely/Pods-Naturely.debug.xcconfig"; sourceTree = "<group>"; };
 		5A6EBBEF28162207002DE54E /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		5A6EBBF128162240002DE54E /* ChatScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatScreen.storyboard; sourceTree = "<group>"; };
+		5A6EBBF32816265D002DE54E /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		5A6EBBF528174F01002DE54E /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
 		5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVerificationViewController.swift; sourceTree = "<group>"; };
 		5F45080F0D594EFCE9FDB259 /* Pods-Naturely-NaturelyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.release.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A02D97C32802457C00FF5374 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 				A06CBDAE280E541D001929E6 /* ChatViewController.swift */,
 				5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */,
 				5A6EBBEF28162207002DE54E /* ChatListViewController.swift */,
+				5A6EBBF528174F01002DE54E /* ChatListTableViewCell.swift */,
+				5A6EBBF32816265D002DE54E /* ConversationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -508,8 +514,10 @@
 				A02D97C42802457C00FF5374 /* API.swift in Sources */,
 				5AF77C08280F5CF80039DFD1 /* PhotoVerificationViewController.swift in Sources */,
 				CB00C7CF2807B7510048B211 /* ProfileViewController.swift in Sources */,
+				5A6EBBF628174F01002DE54E /* ChatListTableViewCell.swift in Sources */,
 				CB4203EB280E133700E705CB /* FeedViewController.swift in Sources */,
 				5A6EBBF028162208002DE54E /* ChatListViewController.swift in Sources */,
+				5A6EBBF42816265D002DE54E /* ConversationViewController.swift in Sources */,
 				A02D97C9280277CB00FF5374 /* MapViewController.swift in Sources */,
 				A06CBDAF280E541D001929E6 /* ChatViewController.swift in Sources */,
 				CB4203E7280E0BB900E705CB /* CameraViewController.swift in Sources */,

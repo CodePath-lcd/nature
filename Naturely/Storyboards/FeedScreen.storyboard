@@ -36,6 +36,24 @@
             </objects>
             <point key="canvasLocation" x="1245" y="1475"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="wfq-kg-pCU">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rOz-6r-vDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="te2-Uo-8Ob" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PzE-At-aOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="H5Y-mp-95S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XuD-PX-qse">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.backward" catalog="system" id="0D6-dj-sHd"/>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1550.7246376811595" y="2170.3125"/>
+        </scene>
         <!--ChatScreen-->
         <scene sceneID="pry-6u-zYW">
             <objects>
@@ -118,9 +136,13 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RZl-eK-cn6">
                                                     <rect key="frame" x="0.0" y="8" width="414" height="414"/>
+                                                    <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="RZl-eK-cn6" secondAttribute="height" multiplier="1:1" id="CT1-21-bXD"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="PNh-ah-fGS" appends="YES" id="bGd-Wy-bsf"/>
+                                                    </connections>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNr-T0-1x2">
                                                     <rect key="frame" x="16" y="430" width="45" height="22"/>
@@ -235,11 +257,35 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fcz-bF-snn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="PNh-ah-fGS">
+                    <connections>
+                        <segue destination="BMf-wh-Eec" kind="presentation" id="bxv-7B-I5f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="640.57971014492762" y="1474.5535714285713"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="M3Q-ie-4GQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsL-cp-inR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="BMf-wh-Eec" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RJi-6u-Kcg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="te2-Uo-8Ob" kind="relationship" relationship="rootViewController" id="Ew6-jN-Fl6"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="640.57971014492762" y="2169.6428571428569"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

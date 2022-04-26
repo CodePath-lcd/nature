@@ -278,10 +278,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvH-47-IlR">
-                                <rect key="frame" x="347" y="57" width="46" height="31"/>
+                                <rect key="frame" x="352" y="57" width="37" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
                                 <connections>
                                     <action selector="onNextButton:" destination="S7L-Tp-FYL" eventType="touchUpInside" id="TsS-kl-COT"/>
                                     <segue destination="ckT-6t-avZ" kind="presentation" identifier="goToFeed" id="E14-pu-7mR"/>
@@ -336,8 +336,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="camera-upload-icon-260nw-1055528567 copy" width="211" height="211"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
