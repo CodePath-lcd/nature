@@ -1,3 +1,30 @@
+# Unit 13
+## User Stories
+
+The following **required** functionality is completed:
+
+- [x] App launches to login page.
+- [x] User can choose to sign-up/register.
+- [x] User can login and logout.
+- [x] User can scroll through posts on the feed screen
+- [x] User can post a picture of their hike
+- [x] User can view a map.
+- [x] User can select a hike/activity on the map
+- [ ] Upon selecting hike user can create a group or join a group for chatting
+- [x] User can view their profile
+- [ ] Profile pic and details on the user can be edited
+- [x/2] Chat
+- [x] Post detail page
+- [x] App Icon
+- [x] App Logo
+- [ ] App name
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+![Unit13](https://user-images.githubusercontent.com/43360016/165454642-6c02e9d8-4f68-4e1b-b132-4fe35f216757.gif)
+
 # Unit 12
 ## User Stories
 
