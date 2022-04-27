@@ -11,6 +11,8 @@
 		5A6EBBF228162240002DE54E /* ChatScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF128162240002DE54E /* ChatScreen.storyboard */; };
 		5A6EBBF42816265D002DE54E /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF32816265D002DE54E /* ConversationViewController.swift */; };
 		5A6EBBF628174F01002DE54E /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF528174F01002DE54E /* ChatListTableViewCell.swift */; };
+		5A6EBBF828188DA2002DE54E /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF728188DA1002DE54E /* SplashScreen.swift */; };
+		5A6EBBFA2819C9C3002DE54E /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6EBBF92819C9C2002DE54E /* PostDetailsViewController.swift */; };
 		5AF77C08280F5CF80039DFD1 /* PhotoVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */; };
 		7B233D0EED2E1B070C6F7726 /* Pods_Naturely_NaturelyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514A63A45DD4AEE06FDF3684 /* Pods_Naturely_NaturelyUITests.framework */; };
 		966917547CE38A535ACE8470 /* Pods_Naturely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19C8A53A34E886220CD2DBA /* Pods_Naturely.framework */; };
@@ -67,6 +69,8 @@
 		5A6EBBF128162240002DE54E /* ChatScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatScreen.storyboard; sourceTree = "<group>"; };
 		5A6EBBF32816265D002DE54E /* ConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		5A6EBBF528174F01002DE54E /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
+		5A6EBBF728188DA1002DE54E /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		5A6EBBF92819C9C2002DE54E /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
 		5AF77C07280F5CF80039DFD1 /* PhotoVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoVerificationViewController.swift; sourceTree = "<group>"; };
 		5F45080F0D594EFCE9FDB259 /* Pods-Naturely-NaturelyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naturely-NaturelyUITests.release.xcconfig"; path = "Target Support Files/Pods-Naturely-NaturelyUITests/Pods-Naturely-NaturelyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A02D97C32802457C00FF5374 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -153,8 +157,8 @@
 				D0F284DA27FD18D7005C5603 /* MapScreen.storyboard */,
 				D0F284D827FD18B8005C5603 /* PostScreen.storyboard */,
 				D0F284DC27FD18F1005C5603 /* UserScreen.storyboard */,
-				D00458C527F54023003E0503 /* LaunchScreen.storyboard */,
 				5A6EBBF128162240002DE54E /* ChatScreen.storyboard */,
+				D00458C527F54023003E0503 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -175,6 +179,8 @@
 				5A6EBBEF28162207002DE54E /* ChatListViewController.swift */,
 				5A6EBBF528174F01002DE54E /* ChatListTableViewCell.swift */,
 				5A6EBBF32816265D002DE54E /* ConversationViewController.swift */,
+				5A6EBBF728188DA1002DE54E /* SplashScreen.swift */,
+				5A6EBBF92819C9C2002DE54E /* PostDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -506,6 +512,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A6EBBFA2819C9C3002DE54E /* PostDetailsViewController.swift in Sources */,
+				5A6EBBF828188DA2002DE54E /* SplashScreen.swift in Sources */,
 				A02D97C7280251A100FF5374 /* Hike.swift in Sources */,
 				D00458BF27F54020003E0503 /* LoginViewController.swift in Sources */,
 				D00458BB27F54020003E0503 /* AppDelegate.swift in Sources */,

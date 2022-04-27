@@ -182,4 +182,14 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         present(actionSheet, animated: true)
     }
     
+    @IBAction func onImageTap(_ sender: Any) {
+        
+        let main = UIStoryboard(name: "FeedScreen", bundle: nil)
+        let postDetail = main.instantiateViewController(identifier: "postDetail")
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
+                delegate = windowScene.delegate as? SceneDelegate else {return}
+        delegate.window?.rootViewController = postDetail
+        self.present(postDetail, animated: true)
+    }
+    
 }
