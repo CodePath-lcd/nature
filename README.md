@@ -12,8 +12,8 @@ The following **required** functionality is completed:
 - [x] User can select a hike/activity on the map
 - [ ] Upon selecting hike user can create a group or join a group for chatting
 - [x] User can view their profile
-- [ ] Profile pic and details on the user can be edited
-- [x/2] Chat
+- [x] Profile pic and details on the user can be edited
+- [x] Chat
 - [x] Post detail page
 - [x] App Icon
 - [x] App Logo
