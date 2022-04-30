@@ -14,6 +14,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableView: UITableView!
     
+    
     let commentBar = MessageInputBar()
     var showsCommentBar = false
     
@@ -118,6 +119,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let user = post["author"] as! PFUser
             
             cell.usernameLabel.text = user.username
+            cell.username.text = user.username
             
             cell.captionLabel.text = post["caption"] as? String
             
@@ -126,6 +128,20 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
             let url = URL(string: urlString)!
             
             cell.photoView.af.setImage(withURL: url)
+            
+            cell.userPhoto.layer.borderWidth = 1
+            cell.userPhoto.layer.masksToBounds = false
+            cell.userPhoto.layer.borderColor = UIColor.black.cgColor
+            cell.userPhoto.layer.cornerRadius = cell.userPhoto.frame.height/2
+            cell.userPhoto.clipsToBounds = true
+            
+            let userPic = PFUser.current()?["profilepic"] as? PFFileObject
+            let picUrlString = (userPic?.url!)!
+            let picUrl = URL(string: picUrlString)!
+            
+            cell.userPhoto.af.setImage(withURL: picUrl)
+            
+            
             return cell
             
         }else if indexPath.row <= comments.count{

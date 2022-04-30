@@ -1,17 +1,17 @@
+////
+////  Sender.swift
+////  Naturely
+////
+////  Created by Luis Mora on 4/27/22.
+////
 //
-//  Sender.swift
-//  Naturely
+//import Foundation
+//import MessageKit
 //
-//  Created by Luis Mora on 4/27/22.
+//struct Sender: SenderType {
 //
-
-import Foundation
-import MessageKit
-
-struct Sender: SenderType {
-
-    var photoURL: String
-    var senderId: String
-    var displayName: String
-
-}
+//    var photoURL: String
+//    var senderId: String
+//    var displayName: String
+//
+//}

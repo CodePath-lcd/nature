@@ -1,18 +1,18 @@
+////
+////  Message.swift
+////  Naturely
+////
+////  Created by Luis Mora on 4/27/22.
+////
 //
-//  Message.swift
-//  Naturely
+//import Foundation
+//import MessageKit
 //
-//  Created by Luis Mora on 4/27/22.
+//struct Message: MessageType {
 //
-
-import Foundation
-import MessageKit
-
-struct Message: MessageType {
-
-    var sender: SenderType
-    var messageId: String
-    var sentDate: Date
-    var kind: MessageKind
-
-}
+//    var sender: SenderType
+//    var messageId: String
+//    var sentDate: Date
+//    var kind: MessageKind
+//
+//}
